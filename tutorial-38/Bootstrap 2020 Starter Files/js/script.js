@@ -1,18 +1,24 @@
 /*=====================================================*/
 /*            JS for adding for display on website    */
+
+const { rootCertificates } = require("tls");
+
 /*=====================================================*/
 const app = document.getElementById('myAPI')
+// const userText = document.getElementById("form-group")
+// userText.addEventListener("submit", translateText()); 
 
 const container=document.createElement('div'); 
 container.setAttribute('class', 'container row justify-content-center '); 
 app.appendChild(container); 
 
 function loadAPIS(){
-    loadAnimeAPI(); 
+    // loadAnimeAPI(); 
     // loadSWAPI(); 
     // loadWeatherAPI(); // not working because of city  
 
     // loadTravelSearch(); 
+
 }
 
 loadAPIS() 
@@ -36,7 +42,7 @@ data.forEach((movie) => {
   console.log(movie.title)
     // Create a div with a card class
     const card = document.createElement('div')
-    card.setAttribute('class', 'card p-3 col-lg-3 col-md-4 my-4')
+    card.setAttribute('class', 'card p-3 col-lg-3 col-md-4')
   
     // Create an h1 and set the text content to the film's title
     const h1 = document.createElement('h1')
@@ -163,4 +169,10 @@ function loadWeatherAPI() {
     function loadTravelCards(res){
         console.log(res); 
 
+    }
+
+    function ValidationEvent(){
+        
+        var usrText = document.getElementById("usrText").nodeValue; 
+        console.log(usrText); 
     }
