@@ -1,4 +1,4 @@
-# WebsiteWithAPI Sandbox Project 
+# Bootstrap Website Sandbox Project 
 
 Bootstrap with HTML 5 / CSS website
 
