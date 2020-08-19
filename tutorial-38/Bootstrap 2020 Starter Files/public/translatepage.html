@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML5 Website with Bootstrap | Responsive Website Design</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="root">
+
+
+    <!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="col-12 text-right">
+				<p><a href="tel:+100000000">Call us at 1(800)HTML-CSS</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+	<nav class="navbar bg-light navbar-light navbar-expand-lg">
+		<div class="container">
+
+		<a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Site Logo" title="Logo"></a>
+		<button class="navbar-toggler">
+			<span class="navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+
+			</span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+				<li class="nav-item"><a href="translatepage.html" class="nav-link">Translate</a></li>
+				<li class="nav-item"><a href="" class="nav-link">Services</a></li>
+				<li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+				<li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+    <!-- End Navigation -->
+
+
+    <!-- Translate Form  -->
+    <div class="translation-section pl-5 pt-5">
+	<form action="#" onsubmit="return ValidationEvent(); return false;">
+        <h2 class="pb-3">English to Spanish Translate</h2>
+        <input id="usrText" name="usrText" placeHolder="Enter English Here" type="text">
+        <input id="translateButton" type="button" value="Translate" onclick = "doTranslate();">
+        
+        <div id="translatedCards"></div>
+
+	</form>
+</div>
+</div>
+
+</body>
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
+	<!-- Scripts for adding API -->
+
+    <script src="js/translation.js"></script>
+	<!-- End Script Source Files -->
+</body>
+</html>

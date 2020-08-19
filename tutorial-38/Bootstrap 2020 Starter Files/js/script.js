@@ -1,7 +1,7 @@
 /*=====================================================*/
 /*            JS for adding for display on website    */
 
-const { rootCertificates } = require("tls");
+// const { rootCertificates } = require("tls");
 
 /*=====================================================*/
 const app = document.getElementById('myAPI')
@@ -13,8 +13,8 @@ container.setAttribute('class', 'container row justify-content-center ');
 app.appendChild(container); 
 
 function loadAPIS(){
-    // loadAnimeAPI(); 
-    // loadSWAPI(); 
+    loadAnimeAPI(); 
+    loadSWAPI(); 
     // loadWeatherAPI(); // not working because of city  
 
     // loadTravelSearch(); 
@@ -23,7 +23,7 @@ function loadAPIS(){
 
 loadAPIS() 
 /*=====================================================*/
-/*              Anime API                          */
+/*              Anime API         open                 */
 /*=====================================================*/
 
 function loadAnimeAPI() {
@@ -68,7 +68,7 @@ request.send()
 }
 
 /*=====================================================*/
-/*             Star Wars API                    */
+/*             Star Wars API       (open)             */
 /*=====================================================*/
 
 function loadSWAPI () {
@@ -122,7 +122,7 @@ swReq.send()
 
 
 // /*=====================================================*/
-/*                 Weather API                  */
+/*                 Weather API   with API key               */
 /*=====================================================*/
 function loadWeatherAPI() {
     var data = null;
@@ -169,10 +169,4 @@ function loadWeatherAPI() {
     function loadTravelCards(res){
         console.log(res); 
 
-    }
-
-    function ValidationEvent(){
-        
-        var usrText = document.getElementById("usrText").nodeValue; 
-        console.log(usrText); 
     }
